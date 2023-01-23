@@ -1,3 +1,20 @@
 {
-    "git.enabled": true
+    "git.enabled": true,
+    "git.allowForcePush": false,
+    "git.autofetch": true,
+    "git.allowNoVerifyCommit": false,
+    "git.alwaysShowStagedChangesResourceGroup": false,
+    "git.confirmSync": true,
+    "git.enableSmartCommit": true,
+    "git.enableCommitSigning": false,
+    "git.fetchOnPull": true,
+    "git.followTagsWhenSync": true,
+    "git.ignoreLegacyWarning": true,
+    "git.ignoreLimitWarning": true,
+    "git.ignoreMissingGitWarning": true,
+    "git.ignoreRebaseWarning": true,
+    "git.ignoreSubmodules": true,
+    "git.ignoreWindowsGit27Warning": true,
+    "git.useCommitInputAsStashMessage": false,
+    "search.useGlobalIgnoreFiles": true
 }
