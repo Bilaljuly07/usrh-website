@@ -1,0 +1,506 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css\index.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+    <title>Document</title>
+</head>
+<!-- <header>
+    <section id="height"></section>
+    <nav>
+        <div id="navcenter" class="navcenter">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <img class="navimage" src="{% static 'images\logo unscript rookies.svg' %}" alt="">
+            <ul class="navfont">
+                <li onclick="uncheck()"><a href="">Home</a></li>
+                <li onclick="uncheck()"><a href="#s2">About</a></li>
+                <li onclick="uncheck()"><a href="#s3">Schedule</a></li>
+                <li onclick="uncheck()"><a href="#s4">Domains</a></li>
+                <li onclick="uncheck()"><a href="#s5">Sponsors</a></li>
+                <li onclick="uncheck()"><a href="#s6">FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+</header> -->
+<body>
+    {% comment %} <section id="height"></section> {% endcomment %}
+    <nav >
+        <div id="navcenter" class="navcenter">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fa fa-bars"></i>
+            </label>
+            <img class="navimage" src="{% static 'images\logo unscript rookies.svg' %}" alt="">
+            <ul class="navfont">
+                <li onclick="uncheck()"><a >Home</a></li>
+                <li onclick="uncheck()"><a >About</a></li>
+                <li onclick="uncheck()"><a >Schedule</a></li>
+                <li onclick="uncheck()"><a >Domains</a></li>
+                <li onclick="uncheck()"><a >Sponsors</a></li>
+                <li onclick="uncheck()"><a >FAQs</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="s1">
+        <div class="introflex">
+            <img class="homepagepic" src="{% static 'images\homepagepic.svg' %}" alt="">
+            <div class="homepagetext">
+                <h1 class="h1homepage">UNSCR;PT 2023</h1>
+                <h2 class="h2homepage">Rookie's Hackathon</h2>
+                <h3 class="h3homepage">Exclusively for <br> 2nd Year Students</h3>
+                <div 
+                	class="apply-button" 
+                	data-hackathon-slug="YOUR-HACKATHON-SLUG" 
+                	data-button-theme="light"
+                	style="height: 44px; width: 312px"
+                >
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="linee"></div>
+    <section id="s2" class="about">
+        <div class="aboutdiv">
+            <h1 class="h1about">About</h1>
+            <h4 class="abouth4">
+                Fr.CRCE's annual national level hackathon has entered in its 5th edition. 
+                Lots of learning with a competitive atmosphere. UnScr;pt wishes to bring 
+                opportunities for all coders to have a hands-on experience on various domains and bring the best out of them.
+            </h4>
+        </div>
+        <div class="containerabout">
+            <div class="card">
+                <div class="content">
+                    <img class="cardimg" src="{% static 'images\24hrs.svg' %}" alt="">
+                    <h3>24 HOURS</h3>
+                    <p>
+                        A 24 hours hackathon in which your coding skills will be tested to the limit and also 
+                        your teamwork as a whole will be put to the ultimate showdown !
+                    </p>
+                    <!--<a href="#">Read more</a>-->
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="cardimg" src="{% static 'images\team.svg' %}" alt="">
+                    <h3>40+ TEAMS</h3>
+                    <p>
+                        40 teams and more will be competing for one ultimate title of "WINNERS". Do you have what it takes ?
+                    </p>
+                    <!--<a href="#">Read more</a>-->
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="cardimg" src="{% static 'images\india.svg' %}" alt="">
+                    <h3>OPEN TO ALL</h3>
+                    <p>
+                        NO matter where you're from and what you are currently pursuing. If you are a second year student from India, 
+                        you can compete !
+                    </p>
+                    <!--<a href="#">Read more</a>-->
+                </div>
+            </div>
+        </div>
+        <div >
+            <img class="abouttrophy" src="{% static 'images\abouttrophy.svg' %}" alt="">
+        </div>
+        <div class="aboutdiv">
+            <h1 class="h1organiser">Organisers</h1>
+        </div>
+        <div class="containerabout organiser">
+            <div class="card">
+                <div class="content">
+                    <img class="cardimgog" src="{% static 'images\ACM.png' %}" alt="">
+                    <h3>ACM CRCE</h3>
+                    <p>
+                        The Association of Computing Machinery (ACM) of FrCRCE is a group of like-minded students, 
+                        with a common goal of creating an environment that is conducive to technological know-how 
+                        while promoting creative and leadership skills.
+                    </p>
+                    <a href="https://frcrce.acm.org/" target = "_blank">Read more</a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="cardimgog" src="{% static 'images\CSI.png' %}" alt="">
+                    <h3>CSI CRCE</h3>
+                    <p>
+                        The Computer Society of India (CSI) Student Chapter of FrCRCE is an active student organization 
+                        which organizes several technical activities including workshops, competitions, technical symposiums, 
+                        guest lectures etc. for its student members.
+                    </p>
+                    <a href="https://csicrce.github.io/csi/" target = "_blank">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="linee"></div>
+    <section id="s3">
+        <div class="container">
+            <div class="top-section">
+                <h1 class="h1about">Schedule</h1>
+            </div>
+
+            <div class="timeline">
+                <div class="line"></div>
+                
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Registrations Start</h2>
+                        <h3 class="schedulefonth3">15th January 2023</h3>
+                        <p class="schedulefontp">
+                            You can register for our hackathon using the DevFolio link provided above, or you can click <a href="#"> here </a>
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Team Confirmation and RSVP</h2>
+                        <h3 class="schedulefonth3">6th February - 8th February</h3>
+                        <p class="schedulefontp">
+                            We will be reviewing and contacting the participants and confirming their participation.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Registration End</h2>
+                        <h3 class="schedulefonth3">5th February</h3>
+                        <p class="schedulefontp">
+                            The regeistration will be closed
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Release of Problem Statements</h2>
+                        <h3 class="schedulefonth3">10th February</h3>
+                        <p class="schedulefontp">
+                            Problem Statements of both the events will be Released 24 hrs before the hackathon begins 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Hackathon Begins</h2>
+                        <h3 class="schedulefonth3">11th February</h3>
+                        <p class="schedulefontp">
+                            Let the HACKATHON begin..!!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="bead"></div>
+                    <div class="content1">
+                        <h2 class="schedulefonth2">Hackathon Ends</h2>
+                        <h3 class="schedulefonth3">12th February</h3>
+                        <p class="schedulefontp">
+                            The hackathon would end and the winning teams would be contacted.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <div class="linee"></div>
+    <section id="s4">
+        <div class="top-section">
+            <h1 class="h1about">Domains</h1>
+        </div>
+        <div class="list-inline mx-auto row">
+            <div class="da domaina list-inline-item mx-3 col">
+                <div class="hold">
+                    <img src="{% static 'images\webdevlogo.png' %}" alt="" class="ima">
+                    <h3 class="domainh3">WEB DEVELOPMENT</h3>
+                    <img src="{% static 'images\trophylogo.svg' %}" alt="" class="trophy">
+                    <div class="grid-box-1">
+                        <p class="para-trophy aboutdiv">
+                            Winners<br>INR 13,000
+                        </p>
+                        <p class="para-trophy aboutdiv"> 
+                            Runner Ups <br>INR 7,000
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="da domainb list-inline-item mx-3 col">
+                <div class="hold">
+                    <img src="{% static 'images\appdevlogo.png' %}" alt="" class="imb">
+                    <h3 class="domainh3">APP DEVELOPMENT</h3>
+                    <img src="{% static 'images\trophylogo.svg' %}" alt="" class="trophy">
+                    <div class="grid-box-1">
+                        <p class="para-trophy aboutdiv">
+                            Winners<br>INR 13,000
+                        </p>
+                        <p class="para-trophy aboutdiv">
+                            Runner Ups <br>INR 7,000
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="linee"></div>
+    <section id="s5">
+        <div class="top-section">
+            <h1 class="h1about">Sponsors</h1>
+        </div>
+        <div class="gallery">
+            {% comment %} <h2 class="sponsortag ">{{sprs.Pt}}</h2> {% endcomment %}
+            <h2 class="sponsortag {% if Title1 == 0 %} activate {% endif %}">Title Sponsor</h2>
+            <div class="flexi">
+                {% for title in Title %}
+                <div>
+                    <img class="sponsorimg" src="{{title.img.url}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+            <h2 class="sponsortag {% if Asstitle1 == 0 %} activate {% endif %}">Associate Title Sponsors</h2>
+            
+            <div class="flexi">
+                {% for asstitle in Asstitle %}
+                <div>
+                    <img class="sponsorimg" src="{{asstitle.img.url}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Platinum1 == 0 %} activate {% endif %}">Platinum Sponsors</h2>
+            <div class="flexi">
+                {% for platinum in Platinum %}
+                <div>
+                    <img class="sponsorimg" src="{{platinum.img.url}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Gold1 == 0 %} activate {% endif %}">Gold Sponsors</h2>
+            
+            <div class="flexi">
+                {% for gold in Gold %}
+                <div>
+                    <img class="sponsorimg" src="{{gold.img.url}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Knowledge1 == 0 %} activate {% endif %}">Knowledge Partners</h2>
+            
+            <div class="flexi">
+                {% for knowledge in Knowledge %}
+                <div>
+                    <img class="sponsorimg" src="{{knowledge.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if In_Kind1 == 0 %} activate {% endif %}">In-Kind Sponsors</h2>
+            
+            <div class="flexi">
+                {% for inkind in In_Kind %}
+                <div>
+                    <img class="sponsorimg" src="{{inkind.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Media1 == 0 %} activate {% endif %}">Media Partners</h2>
+            
+            <div class="flexi">
+                {% for media in Media %}
+                <div>
+                    <img class="sponsorimg" src="{{media.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Community1 == 0%} activate {% endif %}">Community Partners</h2>
+            
+            <div class="flexi">
+                {% for community in Community %}
+                <div>
+                    <img class="sponsorimg" src="{{community.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Technology1 == 0 %} activate {% endif %}">Technology Partners</h2>
+            
+            <div class="flexi">
+                {% for technology in Technology %}
+                <div>
+                    <img class="sponsorimg" src="{{technology.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Streaming1 == 0 %} activate {% endif %}">Streaming Partners</h2>
+            
+            <div class="flexi">
+                {% for streaming in Streaming %}
+                <div>
+                    <img class="sponsorimg" src="{{streaming.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Travel1 == 0 %} activate {% endif %}">Travel Partners</h2>
+            
+            <div class="flexi">
+                {% for travel in Travel %}
+                <div>
+                    <img class="sponsorimg" src="{{travel.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+            <h2 class="sponsortag {% if Food1 == 0 %} activate {% endif %}">Food Sponsors</h2>
+            
+            <div class="flexi">
+                {% for food in Food %}
+                <div>
+                    <img class="sponsorimg" src="{{food.img}}" alt="">
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+    <div class="linee"></div>
+    <section id="s6">
+        <div class="top-section">
+            <h1 class="h1about">Frequently Asked Questions (FAQs)</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>What is a Hackathon</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    A hackathon is an event where in participating teams are provided different real-life problems and 
+                    they have to design a technological solution to anyone of the problems given in the given time limit. 
+                    The final product developed should be usable in real life.
+                </p>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Can I code before coming to the hackathon ?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    You can come prepared with half baked codes, write your own APIs and modules.
+                </p>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>How do I form teams ?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    Each team should comprise of a maximum of 4 members & minimum of 2 members including 
+                    the team leader. Team members can be from different colleges.
+                </p>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>How do I register for Unscript 2k23 ?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    All team members need to register on Devfolio (You can refer an example video below.)
+                </p>
+                <div class="iframe-container centervideo">
+                    <iframe width="300" height="515" src="https://www.youtube.com/embed/miYVtosLzQ0" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>What if I have never been to a hackathon before ?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    For beginners, it will be a great start for working on problem statements where mentors will 
+                    be there to help you out with your projects. So, there is nothing to worry about any errors 
+                    while you work. You will also have a good exposure to a coding atmosphere.
+                </p>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>Is the event going to be online or offline?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    The hackathon will be completely online
+                </p>
+            </div>
+    
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>When will the problem statements be released?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    Problem statements will be released 1 day prior to the main event.
+                </p>
+            </div>
+
+            <div class="accordion">
+                <div class="icon"></div>
+                <h5>How will we be notified about the selection?</h5>
+            </div>
+            <div class="panel">
+                <p>
+                    Selected teams will be notified on Devfolio as well as get a confirmation email. 
+                    Note: Registration does not confirm selection
+                </p>
+            </div>
+
+        </div>
+      </section>
+
+      <footer id="s7">
+        <div class="foot">
+            <section class="sub_footer">
+                <a class="" href="/">
+                    <img size="100" src="{% static 'images\logo unscript rookies.svg' %}" alt="" class="lgo">
+                </a>
+                <small class="addn_info">Fr. Conceicao Rodrigues College of Engineering, Bandra (W) <br><br>+91 8291916643 | +91 7900094875 <br> <br><a href="mailto:unscriptrookiehackathon@gmail.com">unscriptrookiehackathon@gmail.com</a></small><div class="lks"><a href="https://frcrce.acm.org/" target="_blank" aria-label="Acm website" class="" rel="noreferrer">ACM</a><a href="https://instagram.com/unscriptrookies?igshid=MWI4MTIyMDE=" target="_blank" aria-label="Instagram" class="sc-jHVexB iiHqcD" rel="noreferrer"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg></a><a href="https://csicrce.github.io/csi/" target="_blank" aria-label="Csi website" class="sc-jHVexB iiHqcD" rel="noreferrer">CSI</a></div><small class="sc-dwfUOf bNQBLt">© Copyright UnScr;pt2023. All Rights Reserved. <br></small></section></div>
+      </footer>
+</body>
+
+<script type="text/javascript" src="{% static 'js\timeline.js' %}"></script>
+<script type="text/javascript" src="{% static 'js\faq.js' %}"></script>
+<script type="text/javascript" src="{% static 'js\navbar.js' %}"></script>
+</html>
